@@ -6,6 +6,148 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <span class="paw-icon">🐾</span>
+          <span class="logo-text">PetLove</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="pages/pets/pets.html">Pets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Encontre seu novo melhor amigo</h1>
+        <p class="hero-subtitle">Adote um pet e transforme vidas. Milhares de animais esperando por um lar cheio de amor!</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="/pets">Quero Adotar</a>
+          <a class="btn btn-secondary" href="/pets">Saiba Mais</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/adoption-pets.webp" alt="pets" class="hero-pet-image">
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-header">
+          <h1 class="section-title">Sobre o PetLove</h1>
+          <p class="section-subtitle">Conectando corações e transformando vidas desde 2020</p>
+        </div>
+        <div class="about-content">
+          <div class="about-card">
+            <div class="card-icon">❤️</div>
+            <h3>Nossa Missão</h3>
+            <p>
+              Facilitar a adoção responsável de animais, conectando pets que
+              precisam de um lar com famílias dispostas a oferecer amor e
+              cuidado. Acreditamos que todo animal merece uma segunda chance e
+              um lar cheio de carinho.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🌟</div>
+              <h3>Nossa Visão</h3>
+              <p>
+                Ser a principal plataforma de adoção de pets no Brasil, promovendo
+                a cultura da adoção responsável e reduzindo significativamente o
+                número de animais abandonados nas ruas e abrigos.
+              </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🤝</div>
+            <h3>Nossos Valores</h3>
+            <p>
+              Compaixão, responsabilidade, transparência e comprometimento com o
+              bem-estar animal. Trabalhamos em parceria com ONGs, protetores
+              independentes e abrigos para garantir que cada adoção seja um
+              sucesso.
+            </p>
+          </div>
+        </div>
+        <div class="stats-about" id="stats-about">
+          <div class="btn">Carregando...</div>
+        </div>
+
+        <div class="how-it-works">
+          <h2>Como Funciona</h2>
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>Navegue pelos Pets</h3>
+              <p>Explore nosso catálogo de animais disponíveis para adoção. Utilize os filtros para encontrar o pet ideal para você.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>Conheça o Pet</h3>
+              <p>Veja fotos, características e informações detalhadas sobre cada animal. Saiba mais sobre sua personalidade e necessidades.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>Preencha o Formulário</h3>
+              <p>Complete o formulário de adoção com suas informações. Seja honesto e detalhado nas respostas.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">4</div>
+              <h3>Entrevista e Visita</h3>
+              <p>Nossa equipe entrará em contato para uma entrevista e visita prévia ao local onde o pet ficará.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">5</div>
+              <h3>Adoção Aprovada</h3>
+              <p>Após a aprovação, assine o termo de adoção responsável e leve seu novo amigo para casa!</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">6</div>
+              <h3>Acompanhamento</h3>
+              <p>Receba suporte contínuo e permita visitas de acompanhamento para garantir o bem-estar do pet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta-about">
+          <h2>Pronto para Adotar?</h2>
+          <p>Encontre seu novo melhor amigo hoje mesmo</p>
+          <a class="btn btn-primary btn-large" href="">Ver Pets Disponíveis</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <span class="paw-icon">🐾</span>
+              <span class="logo-text">PetLove</span>
+            </div>
+            <p>Conectando pets e famílias desde 2020</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p>📧 atendimento@petlove.com.br</p>
+            <p>📱 (47) 99999-9999</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 PetLove - Todos os direitos reservados</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="pages/home/home.js"></script>
+  </body>
 </html>

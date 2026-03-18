@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets</title>
 
+    <link rel="stylesheet" href="../../styles/main.css" />
     <link rel="stylesheet" href="../../styles/reset.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header" id="main-header">
+    </header>
+
+    <section class="pets-section">
+      <div class="container">
+        <h2 class="section-title">Nossos Pets Disponiveis</h2>
+        <p class="section-subtitle">Conheça os animais que estão buscando um novo lar</p>
+        <div class="filters-pet">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="cachorro">
+            🐶 Cachorros
+          </button>
+          <button class="filter-btn" data-filter="gato">🐱 Gatos</button>
+        </div>
+        <div id="pets-container" class="pets-grid">
+        </div>
+    </section>
+    <script src="pets.js"></script>
+  </body>
 </html>
