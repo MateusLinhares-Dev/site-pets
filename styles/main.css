@@ -593,3 +593,217 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 5px 10px var(--bg-light);
 }
+
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fc; /* Fundo cinza bem claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Largura máxima para ficar parecido com a imagem */
+}
+
+/* --- Cabeçalho e Link --- */
+.back-link {
+    display: inline-block;
+    color: #f45b8e; /* Rosa do botão */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-link:hover {
+    color: #d13a6d;
+    transform: translateX(-5px); /* Efeito de seta movendo */
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: #1a3c5a; /* Azul escuro */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* --- Cartão Branco --- */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Sombra bem suave */
+}
+
+/* --- Foto do Pet --- */
+.pet-avatar-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pet-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Grid do Formulário --- */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.full-width {
+    grid-column: span 2; /* Ocupa as duas colunas inteiras */
+}
+
+/* --- Inputs e Labels --- */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2b415a; /* Azul escuro */
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    background-color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de Focus/Hover nos Inputs */
+.input-group input:hover,
+.input-group select:hover,
+.input-group textarea:hover,
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #f45b8e; /* Fica rosa ao focar */
+    box-shadow: 0 0 0 3px rgba(244, 91, 142, 0.1);
+}
+
+/* --- Caixa de Declaração --- */
+.declaration-box {
+    background-color: #eaf6f4; /* Fundo verde água bem claro */
+    border-left: 4px solid #63c0b3; /* Borda lateral mais escura */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.declaration-box strong {
+    color: #2b415a;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.declaration-box ul {
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+.declaration-box li {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* --- Checkbox de Termos --- */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #f45b8e; /* Muda a cor nativa do checkbox para o rosa do tema */
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2b415a;
+    cursor: pointer;
+}
+
+/* --- Botão Enviar --- */
+.submit-container {
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: #f45b8e; /* Rosa base */
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px; /* Deixa ele redondinho */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(244, 91, 142, 0.3);
+}
+
+/* Efeito Hover do Botão */
+.submit-btn:hover {
+    background-color: #d13a6d; /* Escurece um pouco */
+    transform: translateY(-2px); /* Botão "sobe" um pouquinho */
+    box-shadow: 0 6px 20px rgba(244, 91, 142, 0.4); /* Sombra aumenta */
+}
+
+/* --- Responsividade (Para Celular) --- */
+@media (max-width: 650px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Passa a ser só 1 coluna em telas pequenas */
+    }
+    .full-width {
+        grid-column: span 1;
+    }
+    .form-card {
+        padding: 25px 20px; /* Reduz o padding interno no celular */
+    }
+}

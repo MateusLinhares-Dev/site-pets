@@ -1,11 +1,89 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adocao</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <link rel="stylesheet" href="../../styles/reset.css" />
-  </head>
-  <body></body>
+    <div class="container">
+        <a href="#" class="back-link">&larr; Voltar para Listagem</a>
+
+        <div class="page-header">
+            <h1>Formulário de Adoção</h1>
+            <p>Preencha os dados abaixo para iniciar o processo de adoção</p>
+        </div>
+
+        <main class="form-card">
+            <div class="pet-avatar-container">
+                <img src="https://placedog.net/100/100?random" alt="Foto do Pet" class="pet-avatar">
+            </div>
+
+            <form action="#">
+                <div class="form-grid">
+                    
+                    <div class="input-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="telefone">Telefone/WhatsApp *</label>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="moradia">Tipo de Moradia *</label>
+                        <select id="moradia" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="casa">Casa</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="chacara">Chácara/Sítio</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="condicao">Condição do Imóvel *</label>
+                        <select id="condicao" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="proprio">Próprio</option>
+                            <option value="alugado">Alugado</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="pessoas">Quantas pessoas moram na casa? *</label>
+                        <input type="number" id="pessoas" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="motivacao">Por que deseja adotar este pet? *</label>
+                        <textarea id="motivacao" rows="4" placeholder="Conte-nos sua motivação..." required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="declaration-box">
+                    <strong>Declaro que:</strong>
+                    <ul>
+                        <li>As informações são verdadeiras e estou ciente da responsabilidade da adoção</li>
+                        <li>Me comprometo a fornecer alimentação, cuidados veterinários e carinho</li>
+                        <li>Permitirei visitas de acompanhamento e não abandonarei o animal</li>
+                    </ul>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termos" required>
+                    <label for="termos">Li e aceito todos os termos acima *</label>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Enviar Solicitação de Adoção</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
 </html>
