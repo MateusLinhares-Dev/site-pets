@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <header class="header" id="main-header">
+    </header>
+    
     <div class="container">
-        <a href="#" class="back-link">&larr; Voltar para Listagem</a>
+        <a href="../pets/pets.html" class="back-link">&larr; Voltar para Listagem</a>
 
         <div class="page-header">
             <h1>Formulário de Adoção</h1>
@@ -18,8 +20,8 @@
         </div>
 
         <main class="form-card">
-            <div class="pet-avatar-container">
-                <img src="https://placedog.net/100/100?random" alt="Foto do Pet" class="pet-avatar">
+            <div class="pet-avatar-container" id="pet-avatar">
+                
             </div>
 
             <form action="#">
@@ -85,5 +87,19 @@
         </main>
     </div>
 
+    <div id="sucesso-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-icon">🎉🐾</div>
+            <h2>Adoção Solicitada!</h2>
+            <p>Sua solicitação foi enviada com sucesso. Em breve nossa equipe entrará em contato com você pelo WhatsApp!</p>
+            <button id="fechar-modal" class="submit-btn">Entendi</button>
+        </div>
+    </div>
+    
+    <footer class="footer" id="footer"></footer>
+
+    <script src="../../scripts/rodape.js"></script>
+    <script src="../../scripts/menu.js"></script>
+    <script src="adocao.js"></script>
 </body>
 </html>

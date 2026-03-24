@@ -15,10 +15,14 @@ function createPetCard(pet) {
           <span class="detail-item">${pet.vacinado ? '💉 Vacinado' : '💉 Não vacinado'}</span>
           <span class="detail-item">${pet.castrado ? '✂️ Castrado' : '✂️ Não castrado'}</span>
         </div>
-        <a href="adoption-form.html?id=${pet.id}" class="btn-view-pet">Quero Adotar</a>
+        <a href="../adocao/adocao.html" class="btn-view-pet" onclick="saveStorage('${pet.imagem}')">Quero Adotar</a>
       </div>
     </div>
   `;
+}
+
+const saveStorage = (imagem) => {
+  localStorage.setItem('image', imagem)
 }
 
 async function fetchPets(tipo = 'todos') {
@@ -62,7 +66,7 @@ function setupFilters() {
             e.preventDefault();
             
 
-            const typeSelect = button.getAttribute('data-type');
+            const typeSelect = button.getAttribute('data-filter');
             
             fetchPets(typeSelect);
             
